@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+$fonts:'Geostar',
+cursive;
+
+* {
+    font-family: $fonts;
+    box-sizing: border-box;
+}
+
+.heading {
+    display: flex;
+    background-color: gray;
+
+    div {
+        margin: auto;
+        padding: 1em;
+        font-size: 2em;
+        color: white;
+    }
+
+    #anchor {
+        padding: 0.5em;
+    }
+
+    #fort {
+        padding: 0.5em;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        display: flex;
+
+        nav {
+            ul {
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    flex: 1;
+                    padding-top: 0.5em;
+
+                    a {
+                        text-decoration: none;
+                        display: block;
+                        background-color: gray;
+                        color: aliceblue;
+                        text-align: center;
+                    }
+                }
+
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                padding: 1em;
+                flex: 1;
+            }
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    nav {
+        padding: 0.5em;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+
+            li {
+                flex: 1;
+
+                a {
+                    text-decoration: none;
+                    text-align: center;
+                    background-color: gray;
+                    color: aliceblue;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            padding: 1em;
+        }
+
+        img {
+            height: aut;
+        }
+    }
+
+}
+
+footer {
+    background-color: gray;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-size: 2em;
+    color: white;
+    font-family: $fonts;
+}
